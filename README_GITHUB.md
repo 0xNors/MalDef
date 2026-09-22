@@ -8,7 +8,7 @@
 [![Engines](https://img.shields.io/badge/Engines-29-green)](https://github.com/0xNors/MalDef)
 [![MITRE](https://img.shields.io/badge/MITRE-499-purple)](https://attack.mitre.org/)
 
-> **Developed by:** Sahil Rakholiya & Priya Yadav | Internship Project | Defensive Cybersecurity Only
+
 
 
 
