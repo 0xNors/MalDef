@@ -1,0 +1,38 @@
+{
+  "name": "maldef",
+  "version": "2.1.0",
+  "private": true,
+  "description": "MALDEF - Malware Defense & Offensive Analysis Platform - Professional SOC v2.1",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "framer-motion": "^11.3.8",
+    "jose": "^5.6.3",
+    "jspdf": "^2.5.1",
+    "lucide-react": "^0.427.0",
+    "next": "14.2.5",
+    "papaparse": "^5.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.14.10",
+    "@types/papaparse": "^5.3.14",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.3"
+  }
+}

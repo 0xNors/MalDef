@@ -1,0 +1,112 @@
+{
+  "users": [],
+  "samples": [],
+  "analyses": [],
+  "staticFindings": [],
+  "behaviorEvents": [],
+  "networkEvents": [],
+  "iocs": [],
+  "detections": [],
+  "alerts": [],
+  "analystNotes": [],
+  "detectionRules": [
+    {
+      "id": "RULE-001",
+      "name": "High Entropy Section",
+      "description": "Detects sections with entropy > 7.2 indicating possible packing or encryption",
+      "category": "Static indicator",
+      "severity": "MEDIUM",
+      "condition": "section_entropy > 7.2",
+      "score": 20,
+      "enabled": true,
+      "mitreTechnique": "T1027",
+      "createdAt": "2026-09-16T07:01:58.496Z"
+    },
+    {
+      "id": "RULE-002",
+      "name": "Suspicious Imports",
+      "description": "Executable imports suspicious API combinations",
+      "category": "Static indicator",
+      "severity": "HIGH",
+      "condition": "suspicious_imports >= 3",
+      "score": 25,
+      "enabled": true,
+      "mitreTechnique": "T1106",
+      "createdAt": "2026-09-16T07:01:58.497Z"
+    },
+    {
+      "id": "RULE-003",
+      "name": "Suspicious String Patterns",
+      "description": "Detects URLs, IPs, PowerShell, and obfuscation patterns in strings",
+      "category": "Static indicator",
+      "severity": "MEDIUM",
+      "condition": "suspicious_strings >= 5",
+      "score": 15,
+      "enabled": true,
+      "mitreTechnique": "T1071",
+      "createdAt": "2026-09-16T07:01:58.497Z"
+    },
+    {
+      "id": "RULE-004",
+      "name": "Process Injection Pattern",
+      "description": "Behavioral correlation: process creation combined with file modification",
+      "category": "Behavioral indicator",
+      "severity": "HIGH",
+      "condition": "process_creation AND file_modification within 60s",
+      "score": 30,
+      "enabled": true,
+      "mitreTechnique": "T1055",
+      "createdAt": "2026-09-16T07:01:58.497Z"
+    },
+    {
+      "id": "RULE-005",
+      "name": "Persistence Mechanism",
+      "description": "Registry modification combined with scheduled task or service creation",
+      "category": "Behavioral indicator",
+      "severity": "CRITICAL",
+      "condition": "registry_change AND (scheduled_task_event OR service_event)",
+      "score": 35,
+      "enabled": true,
+      "mitreTechnique": "T1053",
+      "createdAt": "2026-09-16T07:01:58.497Z"
+    },
+    {
+      "id": "RULE-006",
+      "name": "Anomalous Network Connection",
+      "description": "Unusual outbound connection on suspicious port or to rare destination",
+      "category": "Network indicator",
+      "severity": "HIGH",
+      "condition": "rare_destination OR suspicious_port",
+      "score": 25,
+      "enabled": true,
+      "mitreTechnique": "T1071",
+      "createdAt": "2026-09-16T07:01:58.497Z"
+    },
+    {
+      "id": "RULE-007",
+      "name": "IOC Match",
+      "description": "File hash or network indicator matches known IOC from threat intelligence",
+      "category": "IOC match",
+      "severity": "CRITICAL",
+      "condition": "ioc_match",
+      "score": 40,
+      "enabled": true,
+      "mitreTechnique": "T1105",
+      "createdAt": "2026-09-16T07:01:58.497Z"
+    },
+    {
+      "id": "RULE-008",
+      "name": "Correlated Threat Pattern",
+      "description": "Multiple independent suspicious indicators correlated across static, behavior, and network",
+      "category": "Correlation",
+      "severity": "HIGH",
+      "condition": "correlation_score > 60",
+      "score": 20,
+      "enabled": true,
+      "mitreTechnique": "T1082",
+      "createdAt": "2026-09-16T07:01:58.497Z"
+    }
+  ],
+  "reports": [],
+  "auditLogs": []
+}
