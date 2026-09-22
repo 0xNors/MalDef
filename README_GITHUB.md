@@ -10,20 +10,7 @@
 
 > **Developed by:** Sahil Rakholiya & Priya Yadav | Internship Project | Defensive Cybersecurity Only
 
----
 
-## 🚀 Live Demo Screenshots
-
-### Dashboard - Colorful Solid Professional
-![Dashboard](public/screenshots/dashboard-live.png)
-
-### Deep Scan Detail - 29 Engines
-![Analysis](public/screenshots/analysis-detail.png)
-
-### System Health & Operations Center
-![System Health](public/screenshots/system-health.png)
-
----
 
 ## ✨ Features
 
@@ -136,35 +123,7 @@ npm start
 
 ---
 
-## 📸 More Screenshots
 
-| IOC Explorer | ML Analytics | MITRE ATT&CK |
-|--------------|--------------|--------------|
-| ![IOC](public/screenshots/ioc-explorer.png) | ![ML](public/screenshots/ml-analytics.png) | ![MITRE](public/screenshots/mitre.png) |
-
-| Reports | Malware Analysis | Login |
-|---------|------------------|-------|
-| ![Reports](public/screenshots/reports.png) | ![Malware](public/screenshots/malware-analysis.png) | ![Login](public/screenshots/login.png) |
-
----
-
-## 👥 Team
-
-**Sahil Rakholiya** - Lead Developer
-- System Architecture, 29-Engine Deep Scan, MITRE 499, CrowdStrike 14, Backend, Security, API Design
-
-**Priya Yadav** - UI/UX & Analytics
-- UI/UX, Reports, ML Analytics, IOC Explorer, System Health, Testing, Branding, Screenshots, Professional PDF
-
----
-
-## 📄 Documentation
-
-- 📘 **Internship Report:** `MALDEF_Internship_Report_Sahil_Priya_FINAL_22_Pages_Live_Screenshots_No_VirusTotal.pdf` (19MB, 21 pages)
-- 📊 **Presentation:** `MALDEF_Internship_Presentation_Sahil_Priya_FINAL_20_Slides.pptx` (12MB, 20 slides)
-- 📦 **Full Package:** `MALDEF_FINAL_No_VirusTotal_With_Screenshots.zip` (16MB)
-
----
 
 ## 📝 License
 
